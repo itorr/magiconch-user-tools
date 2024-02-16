@@ -5,7 +5,7 @@
 // @version        0.0.1
 // @author         itorr
 // @include        *://192.168.31.*:8532/*
-// @include        https://lab.magiconch.com/tools/*
+// @include        https://lab.magiconch.com/tool/*
 // @run-at         document-start
 // @noframes
 // @grant          GM_setClipboard
