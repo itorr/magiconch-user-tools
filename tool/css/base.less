@@ -52,6 +52,20 @@ button{
         cursor: wait;
         opacity: .5;
     }
+    &.current{
+        
+        color: #FFF;
+        border-color: #052b81;
+        background: #0d41b9;
+        text-shadow: #000 0 1px 2px;
+        box-shadow: 0 2px 0 rgba(0,0,0,.2);
+
+        &:active{
+            box-shadow: 0 1px 0 rgba(0,0,0,.3);
+            position: relative;
+            top: 1px;
+        }
+    }
 }
 
 a{
