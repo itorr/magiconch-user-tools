@@ -9,7 +9,21 @@
 ## 规范
 每个小工具都会在 `tool/` 目录下新建文件夹，对应网站上 `https://lab.magiconch.com/tool/` 下的一个小工具
 
-小工具上线前会单独确认，不允许提交压缩代码
+ - 框架不限，尽可能简单易读、少依赖
+ - 小工具上线前会单独确认，不要提交压缩代码
+
+## API
+用户脚本会在网页上注入一个全局变量 `magiconchToolsEnhanceFunctions`，小工具可以通过这个变量调用一些浏览器插件能提供的功能
+```javascript
+magiconchToolsEnhanceFunctions = {
+    httpRequest: options => GM_xmlhttpRequest(options),
+    openTab: url => GM_openInTab(url),
+    setClipboard: text => GM_setClipboard(text),
+    getValue: key => GM_getValue(key),
+    setValue: (key, value) => GM_setValue(key, value),
+    registerMenuCommand: (name, fn) => GM_registerMenuCommand(name, fn),
+}
+```
 
 
 ## 项目
