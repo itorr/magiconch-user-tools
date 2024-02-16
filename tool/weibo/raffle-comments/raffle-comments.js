@@ -74,8 +74,11 @@ async function getRandomNickname(id, mid) {
     const user = Users[nicknames[Math.floor(Math.random() * nicknames.length)]];
     log(`获取到 ${comments.length} 条评论，${nicknames.length} 个不同的用户`);
     log(``);
-    log(`抽选一名幸运用户`);
-    log(`昵称：${user.screen_name}\n主页：https://weibo.com/u/${user.id}`);
+    if(!user) return log('抽奖失败，没有获取到评论');
+    else {
+        log(`抽选一名幸运用户`);
+        log(`昵称：${user.screen_name}\n主页：https://weibo.com/u/${user.id}`);
+    }
 }
 
 
