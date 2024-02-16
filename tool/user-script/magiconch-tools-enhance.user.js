@@ -4,9 +4,8 @@
 // @namespace      https://magiconch.com
 // @version        0.0.1
 // @author         itorr
-// @include        *://192.168.31.2:8532/*
-// @include        *://192.168.31.7:8532/*
-// @include        https://magiconch.com/tools/*
+// @include        *://192.168.31.*:8532/*
+// @include        https://lab.magiconch.com/tools/*
 // @run-at         document-start
 // @noframes
 // @grant          GM_setClipboard
