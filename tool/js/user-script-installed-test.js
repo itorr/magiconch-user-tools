@@ -6,7 +6,7 @@ document.write(`<article class="not-installed not-installed-box">
 <p>未安装功能用户脚本前，页面内功能将无法正常使用。</p>
 <p>
     点击
-    <a href="./user-script/magiconch-tools-enhance.user.js" target="_blank">magiconch-tools-enhance.user.js</a>
+    <a href="/tool/user-script/magiconch-tools-enhance.user.js" target="_blank">magiconch-tools-enhance.user.js</a>
     进行用户脚本的安装，安装成功后刷新本页面。
 </p>
 </article>`);
