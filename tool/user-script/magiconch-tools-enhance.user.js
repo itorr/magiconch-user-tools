@@ -4,7 +4,7 @@
 // @namespace      https://magiconch.com
 // @version        0.0.1
 // @author         itorr
-// @include        *://192.168.31.*:8532/*
+// @include        *://192.168.31.*:8532/tool/*
 // @include        https://lab.magiconch.com/tool/*
 // @run-at         document-start
 // @noframes
