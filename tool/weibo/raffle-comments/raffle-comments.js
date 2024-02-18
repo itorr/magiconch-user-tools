@@ -54,8 +54,12 @@ async function fetchAllComments(id, mid) {
         max_id_type = result.max_id_type;
         total_number = result.total_number;
         comments = comments.concat(result.data);
+        result.data.forEach(comment => {
+            if(!comment.comments) return;
+            comments = comments.concat(comment.comments);
+        });
         log(`已获取 ${comments.length} 条评论`);
-    } while (comments.length < total_number);
+    } while (max_id);
     return comments;
 }
 
